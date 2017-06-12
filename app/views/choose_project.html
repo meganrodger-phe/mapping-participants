@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form action="/accessibility_questions" method="get" class="form">
+
+
+      <h1 class="heading-xlarge">
+        Choose a project
+      </h1>
+
+
+      <h2 class="heading-medium">Choose which project you would like to add the participant information to:</h2>
+
+    <p>Enter the name of your project or select from the dropdown categories below</p>
+
+      <label class="form-label" for="project">
+        Project Name
+      </label>
+      <input class="form-control" id="project" type="text" name="project"></input>
+
+      <br><br>
+
+      <div class="form-group">
+        <label class="form-label" for="select-box">Choose project portfolio</label>
+        <select class="form-control" id="select-box" name="select-box">
+          <option>Immigration</option>
+          <option>Borders</option>
+          <option>OSCT</option>
+          <option>Crime, Police and Fire</option>
+          <option>HMPO</option>
+          <option>Enablers</option>
+        </select>
+      </div>
+
+<input class="button" type="submit" value="Continue">
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

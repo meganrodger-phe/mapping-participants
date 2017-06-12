@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Are they able to do all of the following online?
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <a class="link-back" href="/url/of/previous/page">Back</a>
+
+      <form action="/category6" method="get" class="form">
+
+        <h1 class="heading-large">Are they able to do all of the following online?</h1>
+
+        <ul class="list list-bullet">
+          <li>Use e-mail or instant messaging</li>
+          <li>Use search engines</li>
+          <li>Sign up for and use an online service (e.g. renew their driving license, join a charity, online banking)</li>
+          <li>Buy things</li>
+        </uL>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visually-hidden">Are they able to do all of the following online?</legend>
+
+            <div class="multiple-choice">
+              <input id="basicTasksTrue" type="radio" name="basicTasks" value="true">
+              <label for="basicTasksTrue">Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="basicTasksFalse" type="radio" name="basicTasks" value="false">
+              <label for="basicTasksFalse">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

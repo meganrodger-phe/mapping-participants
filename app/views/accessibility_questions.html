@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/accessibility_questions02" method="get" class="form">
+
+      <h1 class="heading-xlarge">
+        Access needs monitoring
+      </h1>
+
+      <p>The Home Office needs to improve the quality of services offered to users. We need to record if users have specific disabilities or access needs so we can improve services.</p>
+
+			<h2 class="heading-medium">Did the user have a disability or access needs?
+      <span class="form-hint">
+      They might have declared this on the monitoring form, or to you verbally
+    </span>
+    </h2>
+
+    <div class="form-group">
+    <fieldset class="inline">
+
+      <legend class="visually-hidden">Did the user have a disability or access needs?</legend>
+
+      <div class="multiple-choice">
+        <input id="needs_yes" type="radio" name="needs" value="true">
+        <label for="needs_yes">Yes</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="needs_no" type="radio" name="needs" value="false">
+        <label for="needs_no">No</label>
+      </div>
+
+    </fieldset>
+
+  </div>
+  <input class="button" type="submit" value="Continue">
+  </form>
+
+<br>
+<br>
+<br>
+
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

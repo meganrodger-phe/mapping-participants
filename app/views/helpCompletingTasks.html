@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Do they need help completing tasks online?
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <a class="link-back" href="/url/of/previous/page">Back</a>
+
+      <form action="/canTheyDoThese" method="get" class="form">
+
+        <h1 class="heading-large">Do they need help completing tasks online?</h1>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visually-hidden">Do they need help completing tasks online?</legend>
+
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="needHelp" value="regularly">
+              <label for="radio-1">Regularly</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-2" type="radio" name="needHelp" value="only new tasks">
+              <label for="radio-2">Only new tasks</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-3" type="radio" name="needHelp" value="rarely" {{ checked('needHelp', 'rarely') }}>
+              <label for="radio-3">Rarely or never</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

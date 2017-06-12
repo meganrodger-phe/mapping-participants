@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Do they have advanced digital skills?
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <a class="link-back" href="/url/of/previous/page">Back</a>
+
+      <form action="/category9" method="get" class="form">
+
+        <h1 class="heading-large">Do they have advanced digital skills?</h1>
+
+        <p>For example, they work in tech, can code or have specialist digital knowledge.</p>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visually-hidden">Do they have advanced digital skills?</legend>
+
+            <div class="multiple-choice">
+              <input id="advancedSkillsTrue" type="radio" name="advancedSkills" value="true">
+              <label for="advancedSkillsTrue">Yes</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="advancedSkillsFalse" type="radio" name="advancedSkills" value="false">
+              <label for="advancedSkillsFalse">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
