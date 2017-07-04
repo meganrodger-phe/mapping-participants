@@ -18,21 +18,91 @@
 
 
         <div class="form-group">
-          <fieldset>
 
-            <legend class="visually-hidden">Which of the following access needs did they have?</legend>
+          <h1 class="heading-medium">
+    What is your nationality?
+  </h1>
 
-            <div class="option_01">
-            <div class="multiple-choice" data-target="contact-by-email">
-              <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
-              <label for="example-contact-by-email">Hearing</label>
-            </div>
-            <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
-                <p>
-                  Select all options that are relevant to you.
-                </p>
+  <form>
+    <div class="form-group">
+      <fieldset>
 
-                
+        <legend>
+          <span class="visually-hidden">Which of the following needs did they have?</span>
+          <span class="body-text">Select all options that are relevant.</span>
+        </legend>
+        <br>
+
+        <!--hearing!-->
+        <div class="multiple-choice" data-target="waste-type-1 wsas">
+          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
+          <label for="nationalities-other">Hearing</label>
+        </div>
+      <!--  <div class="panel panel-border-narrow js-hidden multiple-choice" id="example-different-country">
+          <label class="form-label" for="nationalities-other-country">Deaf (uses British sign language as first or preferred language)</label>
+          <input class="form-control" type="checkbox" id="nationalities-other-country" name="nationalities-other-country" value="nationalities-other-country">
+        </div> !-->
+
+        <div class="js-hidden panel panel-border-narrow" id="waste-type-1">
+           <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+           <label for="waste-type-1">Waste from animal carcasses</label>
+         </div>
+
+         <div class="multiple-choice">
+           <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+           <label for="waste-type-2">Waste from mines or quarries</label>
+         </div>
+         <div class="multiple-choice">
+           <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
+           <label for="waste-type-3">Farm or agricultural waste</label>
+         </div>
+
+
+
+
+
+
+
+        <!--physical&mobility!-->
+        <div class="multiple-choice" data-target="example-different-country">
+          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
+          <label for="nationalities-other">Physical & Mobility</label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="example-different-country">
+          <label class="form-label" for="nationalities-other-country">Country name</label>
+          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+        </div>
+        <!--thinking!-->
+        <div class="multiple-choice" data-target="example-different-country">
+          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
+          <label for="nationalities-other">Thinking</label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="example-different-country">
+          <label class="form-label" for="nationalities-other-country">Country name</label>
+          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+        </div>
+        <!--vision!-->
+        <div class="multiple-choice" data-target="example-different-country">
+          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
+          <label for="nationalities-other">Vision</label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="example-different-country">
+          <label class="form-label" for="nationalities-other-country">Country name</label>
+          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+        </div>
+        <!--other!-->
+        <div class="multiple-choice" data-target="example-different-country">
+          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
+          <label for="nationalities-other">Other</label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="example-different-country">
+          <label class="form-label" for="nationalities-other-country">Country name</label>
+          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+        </div>
+
+      </fieldset>
+    </div>
+
 
         <input class="button" type="submit" value="Continue">
 
