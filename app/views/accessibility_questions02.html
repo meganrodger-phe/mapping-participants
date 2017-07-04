@@ -19,90 +19,170 @@
 
         <div class="form-group">
 
-          <h1 class="heading-medium">
-    What is your nationality?
-  </h1>
+
 
   <form>
     <div class="form-group">
-      <fieldset>
-
-        <legend>
-          <span class="visually-hidden">Which of the following needs did they have?</span>
-          <span class="body-text">Select all options that are relevant.</span>
-        </legend>
-        <br>
-
-        <!--hearing!-->
-        <div class="multiple-choice" data-target="waste-type-1 wsas">
-          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-          <label for="nationalities-other">Hearing</label>
-        </div>
-      <!--  <div class="panel panel-border-narrow js-hidden multiple-choice" id="example-different-country">
-          <label class="form-label" for="nationalities-other-country">Deaf (uses British sign language as first or preferred language)</label>
-          <input class="form-control" type="checkbox" id="nationalities-other-country" name="nationalities-other-country" value="nationalities-other-country">
-        </div> !-->
-
-        <div class="js-hidden panel panel-border-narrow" id="waste-type-1">
-           <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
-           <label for="waste-type-1">Waste from animal carcasses</label>
-         </div>
-
-         <div class="multiple-choice">
-           <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
-           <label for="waste-type-2">Waste from mines or quarries</label>
-         </div>
-         <div class="multiple-choice">
-           <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
-           <label for="waste-type-3">Farm or agricultural waste</label>
-         </div>
 
 
 
+     <!--travel doc types -->
+
+     <h3 class="heading-medium">
+       Hearing</h3>
+
+       <fieldset>
+
+           <legend>
+             <span class="body-text">Select all that apply</span>
+           </legend>
+
+           <br>
+           <div class="multiple-choice">
+             <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+             <label for="waste-type-1">Deaf (uses British Sign Language as first or preferred language)</label>
+           </div>
+           <div class="multiple-choice">
+             <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+             <label for="waste-type-2">Hearing impairment/hearing loss</label>
+           </div>
+           <div class="multiple-choice" data-target="contact-by-text">
+        <input id="example-contact-by-text" type="checkbox" name="radio-contact-group" value="No">
+        <label for="example-contact-by-text">Other (please specify)</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-text">
+        <label class="form-label" for="contact-text-message"></label>
+        <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+      </div>
+
+         </fieldset>
+
+         <h3 class="heading-medium">
+           Physical & Motor</h3>
+
+           <fieldset>
+
+               <legend>
+                 <span class="body-text">Select all that apply</span>
+               </legend>
+
+               <br>
+               <div class="multiple-choice">
+                 <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+                 <label for="waste-type-1">Physical disability</label>
+               </div>
+               <div class="multiple-choice">
+                 <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+                 <label for="waste-type-2">Wheelchair User/mobility difficulties</label>
+               </div>
+               <div class="multiple-choice" data-target="other-1">
+            <input id="example-contact-by-text" type="checkbox" name="radio-contact-group" value="No">
+            <label for="example-contact-by-text">Other (please specify)</label>
+          </div>
+          <div class="panel panel-border-narrow js-hidden" id="other-1">
+            <label class="form-label" for="contact-text-message"></label>
+            <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+          </div>
+
+             </fieldset>
+
+
+            <h3 class="heading-medium">
+            Thinking & Feeling</h3>
+
+            <fieldset>
+
+            <legend>
+            <span class="body-text">Select all that apply</span>
+            </legend>
+
+            <br>
+            <div class="multiple-choice">
+            <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+            <label for="waste-type-1">ADHD</label>
+            </div>
+            <div class="multiple-choice">
+            <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+            <label for="waste-type-2">Autistic Spectrum/Aspergers</label>
+            </div>
+            <div class="multiple-choice">
+            <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-mines">
+            <label for="waste-type-3">Dyslexia</label>
+            </div>
+            <div class="multiple-choice">
+            <input id="waste-type-4" name="waste-types" type="checkbox" value="waste-mines">
+            <label for="waste-type-4">Learning difficulties</label>
+            </div>
+            <div class="multiple-choice">
+            <input id="waste-type-5" name="waste-types" type="checkbox" value="waste-mines">
+            <label for="waste-type-5">Mental Health condition</label>
+            </div>
+            <div class="multiple-choice" data-target="other-2">
+            <input id="example-contact-by-text" type="checkbox" name="radio-contact-group" value="No">
+            <label for="example-contact-by-text">Other (please specify)</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="other-2">
+            <label class="form-label" for="contact-text-message"></label>
+            <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+            </div>
+
+            </fieldset>
+
+            <h3 class="heading-medium">
+              Vision</h3>
+
+              <fieldset>
+
+                  <legend>
+                    <span class="body-text">Select all that apply</span>
+                  </legend>
+
+                  <br>
+                  <div class="multiple-choice">
+                    <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+                    <label for="waste-type-1">Blind</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+                    <label for="waste-type-2">Partially sighted (vision impairment not corrected by glasses)</label>
+                  </div>
+
+                </fieldset>
+
+                <h3 class="heading-medium">
+                  Other</h3>
+
+                  <fieldset>
+
+                      <legend>
+                        <span class="body-text">Select all that apply</span>
+                      </legend>
+
+                      <br>
+                      <div class="multiple-choice" data-target="other-3">
+                      <input id="example-contact-by-text" type="checkbox" name="radio-contact-group" value="No">
+                      <label for="example-contact-by-text">Hidden disability such as epilepsy or diabetes</label>
+                      </div>
+                      <div class="panel panel-border-narrow js-hidden" id="other-3">
+                      <label class="form-label" for="contact-text-message">please specify</label>
+                      <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+                      </div>
+                      <div class="multiple-choice" data-target="other-4">
+                      <input id="example-contact-by-text" type="checkbox" name="radio-contact-group" value="No">
+                      <label for="example-contact-by-text">Disability or condition not listed above</label>
+                      </div>
+                      <div class="panel panel-border-narrow js-hidden" id="other-4">
+                      <label class="form-label" for="contact-text-message">please specify</label>
+                      <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+                      </div>
+
+                    </fieldset>
 
 
 
 
-        <!--physical&mobility!-->
-        <div class="multiple-choice" data-target="example-different-country">
-          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-          <label for="nationalities-other">Physical & Mobility</label>
-        </div>
-        <div class="panel panel-border-narrow js-hidden" id="example-different-country">
-          <label class="form-label" for="nationalities-other-country">Country name</label>
-          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
-        </div>
-        <!--thinking!-->
-        <div class="multiple-choice" data-target="example-different-country">
-          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-          <label for="nationalities-other">Thinking</label>
-        </div>
-        <div class="panel panel-border-narrow js-hidden" id="example-different-country">
-          <label class="form-label" for="nationalities-other-country">Country name</label>
-          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
-        </div>
-        <!--vision!-->
-        <div class="multiple-choice" data-target="example-different-country">
-          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-          <label for="nationalities-other">Vision</label>
-        </div>
-        <div class="panel panel-border-narrow js-hidden" id="example-different-country">
-          <label class="form-label" for="nationalities-other-country">Country name</label>
-          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
-        </div>
-        <!--other!-->
-        <div class="multiple-choice" data-target="example-different-country">
-          <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-          <label for="nationalities-other">Other</label>
-        </div>
-        <div class="panel panel-border-narrow js-hidden" id="example-different-country">
-          <label class="form-label" for="nationalities-other-country">Country name</label>
-          <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
-        </div>
 
-      </fieldset>
-    </div>
-
+         <br><br>
 
         <input class="button" type="submit" value="Continue">
 
