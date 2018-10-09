@@ -38,21 +38,38 @@ res.render('question_04')}
 });
 
 //question 3
-
+/*
 router.get('/category3', function (req, res){
 var wantto = req.query.wantto
-var yesDowant = req.session.data['yesDowant']
 
-if (wantto === 'false' ) {
+if (wantto === 'No' ) {
   res.redirect('category1')
 }
-if (yesDowant === 'false') {
-  res.redirect('category2')
-} else {
+else {
   res.render('category3')
 }
 });
+*/
+//question 3true
 
+router.get('/category3', function (req, res){
+var yes_want = req.query.yes_want
+var wantto = req.query.wantto
+var everused = req.session.data['everused']
+
+
+if (everused === 'Yes' && yes_want === 'No' ) {
+  res.redirect('category2')
+}
+
+else if (everused === 'No' && wantto === 'No' ) {
+  res.redirect('category1')
+}
+
+else {
+  res.render('category3')
+}
+});
 
 
 
