@@ -122,6 +122,9 @@ res.redirect('category8')
 res.render('category9')}
 });
 
+//end option
+
+
 
 
 module.exports = router
